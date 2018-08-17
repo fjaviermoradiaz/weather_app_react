@@ -1,0 +1,46 @@
+.weatherLocationCont{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+    min-width: 400px;
+    padding: 25px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 10px 10px 42px -12px rgba(0,0,0,0.75);
+    background: rgba(0,200,0,0.1);
+}
+
+.locationCont {
+    width: 100%;
+    height: 35px;
+    text-align: left;
+    padding-left: 10px;
+    color: #888;
+    line-height: 30px;
+}
+
+.locationCont h1 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+
+.locationList {
+    max-height: 85vh;
+    overflow: auto;
+}
+
+@media (max-width: 48em) {
+    .locationList {
+        max-height: 40vh;
+        margin-bottom: 20px;
+    }
+}
+
+.forecast-title {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
