@@ -29,6 +29,8 @@ class ForecastExtended extends Component {
     }
 
     // Se ejecucta cada vez que se realiza una modificación de las propiedades
+    // Se ejecuta siempre excepto la primera vez que se crea el componente
+    // Por eso el updateCity se ejecuta también en el componentDidMount
     componentWillReceiveProps(nextProps){
         if(nextProps.city !== this.props.city) {
             this.setState({forecastData: null}); // Para que aparezca el indicador de carga
